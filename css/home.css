@@ -1,0 +1,283 @@
+
+body{
+	background-color: #fff;
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo_home.png);
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position:62% 25%;
+    background-size: 180%;
+}
+a{
+    text-decoration: none;
+}
+body header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    width: 50%;
+    
+}
+
+body header ul{
+
+    margin-bottom: 5px;
+}
+
+body nav .enlace{
+    display: block;
+    color: #212121;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 0px 0px 0px 20px;
+    transition: 0.5s;
+    border-left: 2px solid transparent;
+}
+
+body nav .enlace:hover{
+    color: #004d7c;
+    border-left: 4px solid #004d7c;
+}
+
+body nav .enlace:focus{
+    color: #004d7c;
+    border-left: 4px solid #004d7c;
+}
+
+body nav .enlace span{
+    font-size: 20px;
+    top: 50%;
+    margin-left: 10px;
+    transition: transform 0.5s;
+}
+
+.desplegar-btn .mostrar{
+    display: block;
+}
+
+body nav .enlace:hover span{
+    transform: rotate(-180deg);
+}
+
+
+.sub{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.sub li{
+    position: static;
+    padding-left: 60px;
+}
+
+.sub li a{
+    font-size: 17px;
+    display: block;
+    color: #212121;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-left: 1px solid transparent;
+    padding: 0px 0px 0px 20px;
+}
+
+.sub li a:hover{
+    color: #004d7c;
+    border-left: 3px solid #004d7c;
+}
+
+.cont-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+    text-align: center;
+    width: 49%;
+    margin: 0 0 0 auto;
+}
+
+.cont-logo hr{
+    width: 2px;
+    height: 35vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.logo{
+    height: 25vh;
+    margin: 0 auto;
+
+}
+
+.logo img{
+    background-color: #004d7c;
+    padding: 15px 20px;
+    height: 18vh;
+
+}
+.redes-sociales{
+    width: 100%;
+/*     border-left: 1px solid #c3c3c3; */
+    display: inline-block;
+    justify-content: center;
+    height: 25vh;
+}
+
+.redes-sociales a{
+    color: #004d7c;
+    font-size: 35px;
+    display: block;
+    margin-bottom: 28px;
+}
+@media only screen and (min-width: 320px){
+    body{
+        background-size: 160%;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    body{
+        background-position:62% 8%;
+        background-size: 160%;
+    }
+
+}
+
+@media only screen and (min-width: 700px){
+    body{
+        background-position:60% -20%;
+        background-size: 160%;
+    }
+
+    .cont-logo hr{
+        height: 35vh;
+        background-color: transparent;
+    }
+    .cont-logo{
+
+        justify-content: left;
+        height: 100vh;
+        text-align: center;
+        width: 35%;
+
+    }
+    .redes-sociales a{
+        color: #004d7c;
+        font-size: 55px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    body nav .enlace{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        padding: 0px 0px 0px 60px;
+        transition: 0.5s;
+        border-left: 5px solid transparent;
+    }
+    .sub li a{
+        font-size: 25px;
+        margin-bottom: 10px;
+        border-left: 2px solid transparent;
+        padding: 0px 0px 0px 80px;
+    }
+ 
+}
+
+@media only screen and (min-width: 850px){
+    body{
+        background-image: url(../img/fondo_home.png);
+        background-position: 50%;
+        background-size: 100%;
+    }
+    body header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        width: 30%;
+    }
+    .logo{
+        width: 100%;
+        margin: 0 auto;
+        height: 22vh;
+    }
+    
+    .logo img{
+        background-color: #004d7c;
+        padding: 15px 20px;
+    
+    }
+    .redes-sociales{
+        display: inline-block;
+        justify-content: center;
+    }
+    
+    .redes-sociales a{
+        color: #004d7c;
+        font-size: 40px;
+        display: block;
+        margin-bottom: 30px;
+    }
+       
+    .cont-logo hr{
+        width: 2px;
+        height: 30%;
+        margin-bottom: 50px;
+        background-color: #c3c3c3;
+        border: 0px;
+    }
+    .cont-logo{
+        width: 40%;
+    }
+
+    body nav .enlace{
+        font-size: 36px;
+        margin-bottom: 50px;
+        padding: 0px 0px 0px 30px;
+        transition: 0.5s;
+    }
+    
+    .sub li a{
+        font-size: 18px;
+        margin-bottom: 25px;
+        border-left: 2px solid transparent;
+        padding: 0px 0px 0px 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+    body{
+        background-image: url(../img/fondo_home.png);
+        width: 100%;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100%;
+    }
+    body header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 30%;
+    }
+}

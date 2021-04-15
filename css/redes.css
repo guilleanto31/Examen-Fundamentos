@@ -1,0 +1,364 @@
+body{
+    order: 0;
+	background-color: #fff;
+    font-family: 'Lexend', sans-serif;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    grid-template-rows: 20vh 80vh ;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+header{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sub{
+    display: none;
+    position: absolute;
+    padding-left: 40px; 
+
+
+}
+
+.sub li{
+    background-color: #fff;
+    padding: 8px;
+    border-bottom: 1px solid #a01a38;
+}
+
+a{
+    text-decoration: none;
+}
+.enlace{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    color: #212121;
+    transition: 0.5s;
+    border-left: 4px solid #a01a38;
+    padding-left: 10px;
+}
+
+.sub-enlace{
+    color: #212121;
+}
+
+main{
+    order: 2;
+}
+.cont-logo{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0px 15px 0px auto;
+    padding-right: 10%;
+}
+
+.logo{
+    
+    margin: 0 auto;
+}
+
+.logo img{
+    background-color: #a01a38;
+    padding: 10px 12px;
+    height: 15vh;
+}
+
+.redes-sociales{
+    
+    background-color: #a01a38;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.redes-sociales a{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+.cont-logo hr{
+    display: none;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    grid-column:1 / 3
+}
+
+.proyectos{
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.28);
+    -webkit-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.28);
+    -moz-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.28);
+    padding: 0px;
+    width: 100%;
+    margin-top: 15px;
+    height: 25vh;
+}
+
+.card .logo-cliente{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.card img{
+    height: 100%;
+    
+}
+
+.card .info-cliente{
+    text-align: left;
+    margin-left: 5%;
+    padding-right: 10px;
+}
+.card .info-cliente h2{
+    color: #a01a38;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .info-cliente p{
+
+    font-size: 16px;
+
+}
+
+.card hr{
+    margin: 0px;
+    width: 2px;
+    height: 50%;
+    background-color: #a01a38;
+    border: 0px;
+}
+
+.cont-img{
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    margin: 0 auto; 
+}
+
+.img-redes{
+    display: flex;
+    width: 80%;
+    padding-top: 45%;
+    margin: 0 auto;    
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+      transform:scale(0)
+    }
+    to {
+      transform:scale(1)
+    }
+}
+
+.cerrar{
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cerrar:hover,.cerrar:focus{
+    color: #a01a38; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.direccion{
+    display: flex;
+    position: absolute;
+    top: 48vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.direccion button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.direccion button:focus{
+    outline: transparent;
+    border: none;
+    color: #fff;
+}
+
+
+.direccion .derecha{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.direccion .izquierda{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+@media only screen and (min-width: 500px){
+
+
+    .redes-sociales a{
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .img-redes{
+        padding-top: 10vh;
+        width:auto;
+        height: 80vh;
+    }
+    .direccion {
+        font-size: 45px;
+    }
+    .direccion .derecha{
+        font-size: 25px;
+    }
+    
+    .direccion .izquierda{
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (min-width: 700px){
+    .sub{
+        margin-top: 10px;
+    }
+    .enlace{
+        font-size: 25px;
+    }
+    .proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width: 45%;
+        box-shadow: none;
+        transition: 0.5s;
+        box-shadow: 1px 1px 10px -5px rgba(160,26,56,0.15);
+
+        margin: 10px;
+    }
+
+    .card:hover{
+        box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+        -webkit-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+        -moz-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+    }
+
+    .card img{
+        height: 80%;
+        
+    }
+
+    .direccion{
+        font-size: 25px;
+    }
+    .direccion .derecha{
+        font-size: 28px;
+    }
+    
+    .direccion .izquierda{
+        font-size: 28px;
+    }
+    
+}
+
+@media only screen and (min-width: 1100px){
+    .card:hover{
+        box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+        -webkit-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+        -moz-box-shadow: 11px 14px 51px -20px rgba(160,26,56,0.35);
+    }
+    .card{
+        box-shadow: 1px 1px 10px -5px rgba(160,26,56,0.15);
+
+        margin: 10px;
+    }
+    .redes-sociales a{
+        font-size: 40px;
+    }
+
+    .img-redes{
+        padding-top: 10vh;
+        width:auto;
+        height: 80vh;
+    }
+    .enlace{
+        font-size: 30px;
+    }
+    header{
+        padding: 5% 10%;
+    }
+    .direccion{
+        font-size: 30px;
+
+    }
+    .direccion .derecha{
+        font-size: 30px;
+    }
+    
+    .direccion .izquierda{
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px){
+    .enlace{
+        font-size: 34px;
+    }
+
+    .card img{
+        height: 100%;
+        
+    }
+    .card{
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+
